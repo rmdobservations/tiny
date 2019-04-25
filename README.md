@@ -7,7 +7,7 @@ This one was made from copying markdown. Makes more sense. But clicking on it gi
 
 ![npm](https://img.shields.io/npm/v/tiny.svg)
 
-###Instructions
+# Instructions
 const tiny = require("@bamblehorse/tiny");
 
 tiny("So much space!");
