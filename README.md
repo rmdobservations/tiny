@@ -8,13 +8,13 @@ Some things I noticed but were not explicitly pointed out by original author. In
 The README for creating **tiny** are on the npm site at: https://www.npmjs.com/package/@izziedee1/tiny
  
 
-# Instructions for using **tiny** package in a new project rmd1
+# Instructions for using **tiny** package
+## New project with name rmd1
 
 1. Create new directory with same name as project and cd into it:
      * mkdir rmd1
      * cd rmd1
-2. 
- * create file **index.js** and enter this code: 
+2. Create file **index.js** and enter this code: 
  ```javascript 
       const tiny = require("@izziedee1/tiny");
       console.log(tiny("So much space!")); 
