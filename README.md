@@ -1,28 +1,55 @@
-# tiny
+# Using tiny
 
-This was based on tutorial by https://medium.freecodecamp.org/how-to-make-a-beautiful-tiny-npm-package-and-publish-it-2881d4307f7
+I found a tutorial about making a simple npm package. 
+This was based on tutorial by https://medium.freecodecamp.org/how-to-make-a-beautiful-tiny-npm-package-and-publish-it-2881d4307f78
 
-Some things I noticed but were not explicitly pointed out by original author. In particular, I was confused by the combination of creating the package, **tiny** and the using of **tiny** as a package in another project.
+Some things I noticed but were not explicitly pointed out by original author. In particular, I was confused by the combination of creating the package, **tiny** and the using of **tiny** in the section **Usage**. It is clear to me now that the **Usage** code had to be in a different project. But I am new at this so I was confused. 
 
-# Instructions for using **tiny** package
+The README for creating **tiny** are on the npm site at: https://www.npmjs.com/package/@izziedee1/tiny
+ 
+
+# Instructions for using **tiny** package in a new project
 
 1. Create new directory and cd into it:
      * mkdir rmd1
      * cd rmd1
 
-2. Create a new package.json for project rmd1:
+2. Create a new _package.json_ for project **rmd1**:
  * npm init --scope=izziedee1
  * create file index.js and enter this code: 
  ```javascript 
       const tiny = require("@izziedee1/tiny");
       console.log(tiny("So much space!")); 
   ```
-3. At command line, 
+3. The resulting package.json will look like:
+```json
+{
+  "name": "@izziedee1/rmd1",
+  "version": "1.0.0",
+  "description": "First test package",
+  "main": "index.js",
+  "scripts": {
+    "test": "node rmdtest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "rmdobservations"
+  },
+  "author": "rose",
+  "license": "ISC",
+  "dependencies": {
+    "@izziedee1/tiny": "^1.0.0"
+  }
+}
+```
+Notice that the **rmd1** is added automatically to the name.
+
+4. To check if this works, run at command line, 
  * node index
  
-4. Should see output at console:  Somuchspace!
+5. Should see output at console:  Somuchspace!
 
- # Discussion
+# Discussion
 
 
 # Particular
