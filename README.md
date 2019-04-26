@@ -22,7 +22,7 @@ The README for creating **tiny** are on the npm site at: https://www.npmjs.com/p
 3. Use init to create a new _package.json_ for project **rmd1**:
 ``` npm init --scope=izziedee1
 ```
-The resulting package.json will look like:
+4. The resulting package.json will look like:
 ```json
 {
   "name": "@izziedee1/rmd1",
@@ -43,12 +43,11 @@ The resulting package.json will look like:
   }
 }
 ```
-Notice that the **rmd1** is added automatically to the name.
 
-4. To check if this works, run at command line, 
+5. To check if this works, run at command line, 
 ```node index
  ```
-5. Should see output at console:  Somuchspace!
+6. Should see output at console:  Somuchspace!
 
 # Discussion
 
