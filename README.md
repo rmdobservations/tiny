@@ -12,15 +12,18 @@ The README for creating **tiny** are on the npm site at: https://www.npmjs.com/p
 ## New project with name rmd1
 
 1. Create new directory with same name as project and cd into it:
-     * mkdir rmd1
-     * cd rmd1
+```
+     mkdir rmd1
+     cd rmd1
+```
 2. Create file **index.js** and enter this code: 
  ```javascript 
       const tiny = require("@izziedee1/tiny");
       console.log(tiny("So much space!")); 
   ```
 3. Use init to create a new _package.json_ for project **rmd1**:
-``` npm init --scope=izziedee1
+``` 
+npm init --scope=izziedee1
 ```
 4. The resulting package.json will look like:
 ```json
@@ -45,10 +48,13 @@ The README for creating **tiny** are on the npm site at: https://www.npmjs.com/p
 ```
 
 5. To check if this works, run at command line, 
-```node index
+```
+node index
  ```
-6. Should see output at console:  Somuchspace!
-
+6. Should see output at console:  
+```
+Somuchspace!
+```
 # Discussion
 
 Creating a github repository distracted from the goal of the essay. Messing around with npm account caused some stupid errors.
