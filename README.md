@@ -8,20 +8,21 @@ Some things I noticed but were not explicitly pointed out by original author. In
 The README for creating **tiny** are on the npm site at: https://www.npmjs.com/package/@izziedee1/tiny
  
 
-# Instructions for using **tiny** package in a new project
+# Instructions for using **tiny** package in a new project rmd1
 
-1. Create new directory and cd into it:
+1. Create new directory with same name as project and cd into it:
      * mkdir rmd1
      * cd rmd1
-
-2. Create a new _package.json_ for project **rmd1**:
- * npm init --scope=izziedee1
- * create file index.js and enter this code: 
+2. 
+ * create file **index.js** and enter this code: 
  ```javascript 
       const tiny = require("@izziedee1/tiny");
       console.log(tiny("So much space!")); 
   ```
-3. The resulting package.json will look like:
+3. Use init to create a new _package.json_ for project **rmd1**:
+``` npm init --scope=izziedee1
+```
+The resulting package.json will look like:
 ```json
 {
   "name": "@izziedee1/rmd1",
@@ -45,15 +46,17 @@ The README for creating **tiny** are on the npm site at: https://www.npmjs.com/p
 Notice that the **rmd1** is added automatically to the name.
 
 4. To check if this works, run at command line, 
- * node index
- 
+```node index
+ ```
 5. Should see output at console:  Somuchspace!
 
 # Discussion
 
+Creating a github repository distracted from the goal of the essay. Messing around with npm account caused some stupid errors.
+I did achieve my goal of learning how to create a package and use it.
 
-# Particular
+# OS
 I ran this in Ubuntu Linux 18.04
 
-# Critique
-Creating a github repository distracted from the goal of the essay. Messing around with npm account caused some stupid errors.
+
+
